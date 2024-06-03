@@ -2,7 +2,6 @@
 
 
 
-
 ## Installation
 
 Make sure you've already git installed. Then you can run the following commands to get the scripts on your computer:
