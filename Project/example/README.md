@@ -1,10 +1,10 @@
-# Python Web Scraping Course
+# Python Web Scraping Course !
 
 Welcome to the **Python Web Scraping** course! In this course, you'll learn how to extract data from websites using Python. We'll cover essential libraries such as `requests`, `BeautifulSoup`, and `Selenium`.
 
 ## Table of Contents
 
-- [Python Web Scraping Course](#python-web-scraping-course)
+- [Python Web Scraping Course !](#python-web-scraping-course-)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
 
