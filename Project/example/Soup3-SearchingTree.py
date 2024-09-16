@@ -82,6 +82,27 @@ soup = BeautifulSoup(html_doc, "html.parser")
 # data_soup = BeautifulSoup('<div data-foo="value">foo!</div>')
 # print(data_soup.find_all(data-foo="value")) # syntax: error
 # print(data_soup.find_all(attrs={"data-foo": "value"}))
-name_soup = BeautifulSoup('<input name="email"/>', features="lxml")
-print(name_soup.find_all(name="email"))
-print(name_soup.find_all(attrs={"name": "email"}))
+# name_soup = BeautifulSoup('<input name="email"/>', features="lxml")
+# print(name_soup.find_all(name="email"))
+# print(name_soup.find_all(attrs={"name": "email"}))
+
+
+# # Searching by CSS class
+# print(soup.find_all("a", class_="sister"))
+# print(soup.find_all(class_=re.compile("itl")))
+# def has_six_characters(css_class):
+#     return css_class is not None and len(css_class) == 6
+# print(soup.find_all(class_=has_six_characters))
+# css_soup = BeautifulSoup('<p class="body strikeout"></p>', features="lxml")
+# print(css_soup.find_all("p", class_="strikeout"))
+# print(css_soup.find_all("p", class_="body"))
+# print(css_soup.find_all("p", class_="body strikeout"))
+# print(css_soup.find_all("p", class_="strikeout body"))
+# print(css_soup.select("p.strikeout.body"))
+# print(soup.find_all("a", attrs={"class": "sister"}))
+
+
+# # The string argument
+# print(soup.find_all(string="Elsie"))
+# print(soup.find_all(string=["Tillie", "Elsie", "Lacie"]))
+print(soup.find_all(string=re.compile("Dormouse")))
