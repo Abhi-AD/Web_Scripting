@@ -102,7 +102,22 @@ soup = BeautifulSoup(html_doc, "html.parser")
 # print(soup.find_all("a", attrs={"class": "sister"}))
 
 
-# # The string argument
+#  # # The string argument
 # print(soup.find_all(string="Elsie"))
 # print(soup.find_all(string=["Tillie", "Elsie", "Lacie"]))
-print(soup.find_all(string=re.compile("Dormouse")))
+# print(soup.find_all(string=re.compile("Dormouse")))
+# def is_the_only_string_within_a_tag(s):
+#     return s == s.parent.string
+# print(soup.find_all(string=is_the_only_string_within_a_tag))
+# print(soup.find_all("a", string="Elsie"))
+# # # The string argument is new in Beautiful Soup 4.4.0. In earlier versions it was called text:
+# # print(soup.find_all("a", text="Elsie"))
+
+
+# # # The limit argument
+# print(soup.find_all("a", limit=2))
+
+
+# # # The recursive argument
+# print(soup.html.find_all("title"))
+# print(soup.html.find_all("title", recursive=False))
