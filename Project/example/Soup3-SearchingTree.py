@@ -121,3 +121,17 @@ soup = BeautifulSoup(html_doc, "html.parser")
 # # # The recursive argument
 # print(soup.html.find_all("title"))
 # print(soup.html.find_all("title", recursive=False))
+
+
+# # # Calling a tag is like calling find_all()
+# print(soup.find_all("a"))
+# print(soup("a"))
+# print(soup.title.find_all(string=True))
+# print(soup.title(string=True))
+
+# # # find()
+# print(soup.find_all("title", limit=1))
+# print(soup.find("title"))
+# print(soup.find("nosuchtag"))
+# print(soup.head.title)
+# print(soup.find("head").find("title"))
