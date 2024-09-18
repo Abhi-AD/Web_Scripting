@@ -53,5 +53,4 @@ print("Data saved to covid_data.csv using the traditional 'open' method.")
 # Load and display the data using Pandas
 df = pd.read_csv("csv/covid_data.csv", encoding="utf-8", header=None)
 # print(df)
-
-print("Columns in DataFrame:", list(df.columns))
+print(df.head(10))
